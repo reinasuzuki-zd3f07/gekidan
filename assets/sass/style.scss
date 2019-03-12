@@ -3,34 +3,88 @@
 @import "module";
 
 /*
+* 全体設定ここから
+*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;//10px
+}
+body{
+    font-size: 1.6rem;//16px
+    font-family: 'Noto Sans JP', sans-serif;
+    background: linear-gradient(#fff,#a0d8ef);
+    color: #333;
+}
+p{
+    font-size: 1.6rem;//16px
+}
+li{
+	list-style-type: none;
+}
+a{
+	color:#333;
+}
+a:hover{
+		color:#00acf0;
+		border-bottom: #00acf0;
+		background-color: #a0d8ef;
+}
+
+//FontAwsomeの隙間
+.fa{
+  padding-right: 0.8rem;
+}
+
+//h1の文字隠し
+.gl-header_title{
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+/*
+* 全体設定ここまで
+*/
+
+/*
 * ヘッダー
 */
 .gl-header {
-  background-color: #ddd;
+  background-color: #a0d8ef;
   height: 50px;
   .navbar-brand {
   	padding-top: 0;
   	margin-right: 20px;
   }
+  .navbar{
+  	background-color: #a0d8ef;
+  }
   /*
 	* ロゴ（画像置換）
 	*/
   &_title {
-  	width: 200px;
+  	width: 76px;
   	height: 50px;
   	background: url("../images/logo.png") 0 0 no-repeat;
-		text-indent: -9999px;
+		// text-indent: -9999px;
 		&:hover {
 			opacity: 0.5;
 		}
   }
+.nav-menu{
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
   /*
 	* ハンバーガーアイコン
 	*/
   .navbar {
-  	background-color: #ddd;
+  	background-color: #fff;
   	.navbar-toggle {
-  		background-color: #ccc;
+  		background-color: #a0d8ef;
   		.icon-bar {
   			background-color: #fff;
   		}
@@ -44,12 +98,56 @@
 .hero {
 	width: 100%;
 	height: 500px;
-	background: url("../images/main.jpg") center center no-repeat;
+	background: url("../images/penguinhero.jpg") center center no-repeat;
 	background-size: cover;
 	@media screen and (max-width: 768px) {
 		height: 300px;
 	}
 }
+
+/*
+*ここからmember.html
+*/
+.seiretsu{
+	display: flex;
+	justify-content: space-between;
+	// @media screen and (max-width: 768px) {
+	// display:block;
+	// width: 100%;
+	// }
+}
+
+.memberImg{
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	position: relative;
+ 	overflow: hidden;
+	border-radius: 50%;
+	&_img{
+		  position: absolute;
+		  top: -100%;
+		  bottom: -100%;
+		  margin: auto;
+	}
+}
+.row {
+	margin-bottom: 5rem;
+	h3{
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		text-align: center;
+	}
+}
+.profile th, tr{
+	font-weight: normal;
+	height: 3rem;
+}
+
+
+/*
+*ここまでmember.html
+*/
 
 /*
 * 共通コンテンツ
@@ -60,7 +158,7 @@
 		&_title {
 			padding-left: 10px;
 			margin: 40px 0;
-			border-left: 5px solid #bbb;
+			border-left: 5px solid #00acf0;
 			font-size: 2rem;
 		}
 		&_subtitle {
@@ -71,7 +169,7 @@
 			margin: 40px 0;
 			padding-bottom: 40px;
 			line-height: 3;
-			border-bottom: 1px dotted #999;
+			border-bottom: 1px dotted #00acf0;
 		}
 		&_lists {
 			margin-bottom: 40px;
@@ -100,7 +198,7 @@
 	width: 100%;
 	height: 100px;
 	padding-top: 60px;
-	background-color: #ddd;
+	background-color: #fff;
 	&_container {
 		text-align: center;
 	}

@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>PageTitle | SiteTitle</title>
-    <meta name="keywords" content="キーワード,半角のカンマ区切りで6~7語(SEOの効果なし)">
-    <meta name="description" content="検索結果に表示する200語程度のページ説明文(SEOの効果なし)">
+    <meta name="keywords" content="空飛ぶペンギン,ペンギン,空飛ぶ,劇団,社会人,横浜,横浜市立大学,海星館">
+    <meta name="description" content="横浜を中心に活動する社会人劇団「空飛ぶペンギンカンパニー」のWebサイトです。公演情報をお知らせしています。練習風景もご覧いただけます。">
     <!-- スマホの表示倍率を100%にリセット -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- iPhoneXでのボックス表示対応(Bootstrapのハンバーガーアイコンが無効になる) -->
     <!-- <meta name="viewport" content="viewport-fit=cover"> -->
     <!-- OGP (Facebookでのフィード表示) -->
-    <meta property="fb:app_id" content="App-ID(15文字の半角数字)" />
-    <meta property="og:title" content="(PageTitle | )SiteTitle" />
+    <!-- <meta property="fb:app_id" content="App-ID(15文字の半角数字)" /> -->
+    <meta property="og:title" content="Sorapen" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://sample.com/aboutus" />
-    <meta property="og:image" content="http://test.com/img/ogp.jpg" />
-    <meta property="og:site_name" content="SiteTitle" />
-    <meta property="og:description" content="ページ説明文" />
+    <!-- <meta property="og:url" content="http://後から書き換える" /> -->
+    <meta property="og:image" content="後から追加する" />
+    <meta property="og:site_name" content="Sorapen" />
+    <meta property="og:description" content="横浜を中心に活動する社会人劇団「空飛ぶペンギンカンパニー」のWebサイトです。" />
 
     <!-- ファビコン -->
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <!-- ホーム画面に追加 -->
+    <link rel="apple-touch-icon" href="images/touchIcon.jpg">
     <!-- Bootstrap4.2.1 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <!-- FontAwesome -->
@@ -50,41 +52,22 @@
 
 <body class="top">
   <header class="gl-header">
-    <nav class="navbar navbar-fixed-top">
-      <!-- 1000px以下 -->
-      <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><h1 class="gl-header_title">SiteTitle</h1></a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Top</a></li>
-              <li><a href="#">Menu01</a></li>
-              <li><a href="#">Menu02</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Menu03 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Menu03-1</a></li>
-                  <li><a href="#">Menu03-2</a></li>
-                  <li><a href="#">Menu03-3</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Menu03-4</li>
-                  <li><a href="#">Menu03-4-1</a></li>
-                  <li><a href="#">Menu03-4-2</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="./">Utility01</a></li>
-              <li><a href="#">Utility02</a></li>
-              <li><a href="#">Utility03</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="#"><h1 class="gl-header_title">空飛ぶペンギンカンパニー</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item nav-menu"><a class="nav-link" href="#">ホーム <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item nav-menu"><a class="nav-link" href="#">公演情報</a></li>
+          <li class="nav-item nav-menu"><a class="nav-link" href="#">社員紹介</a></li>
+          <li class="nav-item nav-menu"><a class="nav-link" href="#">お問い合わせ</a></li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+              <li class="nav-menu"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+              <li class="nav-menu"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -124,21 +107,21 @@
 
   <footer class="gl-footer">
     <div class="container gl-footer_container">
-      <small>&copy;20XX XXXX Co., Ltd. All Rights Reserved.</small>
+      <small>&copy;2019 SORATOBU PENGUIN COMPANY All Rights Reserved.</small>
     </div>
   </footer>
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- 下記は随時変更する -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96344339-1"></script>
+ <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96344339-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('require', 'linkid');
     gtag('config', 'UA-96344339-1');
-  </script>
+  </script> -->
 
 </body>
 </html
