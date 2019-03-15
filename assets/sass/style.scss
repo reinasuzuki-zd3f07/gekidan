@@ -211,12 +211,19 @@ a:hover{
 	margin-left: 2rem;
 	h5{
 		margin-bottom: 0;
-		padding-top: 2rem;
+		padding-top: 1rem;
 		font-size: 1.8rem;
 		border-bottom: dotted 1px #333;
 	}
 	p{
 		padding-top: .5rem;
+	}
+}
+.blogImg{
+	padding: 1rem;
+	@media screen and (max-width: 768px) {
+	display:none;
+
 	}
 }
 //ここまでblog.html向けのCSS
