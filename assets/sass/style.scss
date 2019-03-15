@@ -83,10 +83,12 @@ a:hover{
 	*/
   .navbar {
   	background-color: #fff;
-  	.navbar-toggle {
-  		background-color: #a0d8ef;
-  		.icon-bar {
-  			background-color: #fff;
+  	.navbar-toggler {
+  		background-color: #555;
+  		.navbar-toggler-icon {
+  			// background-color: #fff;
+  			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
   		}
   	}
   }
@@ -200,6 +202,24 @@ a:hover{
 	}
 }
 //ここまでstage.html向けのCSS
+
+//ここからblog.html向けのCSS
+.cell-size{
+	margin-bottom: 0;
+}
+.blogcontent{
+	margin-left: 2rem;
+	h5{
+		margin-bottom: 0;
+		padding-top: 2rem;
+		font-size: 1.8rem;
+		border-bottom: dotted 1px #333;
+	}
+	p{
+		padding-top: .5rem;
+	}
+}
+//ここまでblog.html向けのCSS
 
 /*
 * 共通コンテンツ
