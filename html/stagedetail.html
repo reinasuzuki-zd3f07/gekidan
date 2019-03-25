@@ -43,7 +43,7 @@
     <!-- OriginalJS -->
     <script src="js/index.js"></script>
 
-    <!-- IE9以下にHTML5の新要素を認識 /削除予定-->
+    <!-- IE9以下にHTML5の新要素を認識 -->
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
@@ -58,11 +58,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item nav-menu"><a class="nav-link" href="index.html">ホーム <span class="sr-only">(current)</span></a></li>
           <li class="nav-item nav-menu"><a class="nav-link" href="stage.html">公演情報</a></li>
           <li class="nav-item nav-menu"><a class="nav-link" href="member.html">社員紹介</a></li>
-          <li class="nav-item nav-menu"><a class="nav-link" href="blog.html">ブログ</a></li>
           <li class="nav-item nav-menu"><a class="nav-link" href="contact.php">お問い合わせ</a></li>
           <li class="nav-item nav-menu"><a class="nav-link" href="https://twitter.com/penguin_sora"><i class="fab fa-twitter-square"></i></a></li>
           <li class="nav-item nav-menu"><a class="nav-link" href="https://ja-jp.facebook.com/%E7%A9%BA%E9%A3%9B%E3%81%B6%E3%83%9A%E3%83%B3%E3%82%AE%E3%83%B3%E3%82%AB%E3%83%B3%E3%83%91%E3%83%8B%E3%83%BC-1433144510231399/"><i class="fab fa-facebook-square"></i></a></li>
@@ -71,31 +70,35 @@
     </nav>
   </header>
 
-  <section class="hero"></section>
+  <section class="catch"></section>
 
   <main>
     <div class="container">
       <section class="block">
           <div class="block_body">
-            <h2 class="block_body_title">会社概要</h2>
-
-            <p class="block_body_p">
-              空飛ぶペンギンカンパニーは、横浜を拠点に活動する社会人劇団です。<br>
-              とある大学の演劇研究部のOB・OGを中心に、2013年に結成されました。<br>
-              年1～2回の演劇公演を中心に活動しています。
-            </p>
-
-            <h2 class="block_body_title">新着情報</h2>
-            <ol class="block_body_lists">
-              <li>のぞき見公演終了しました！</li>
-              <li>いよいよ今週末のぞき見公演開演！</li>
-              <li>練習風景です！</li>
-            </ol>
-          </div>
+            <h2 class="block_body_title">公演情報</h2>
+            <div class="mb-12">
+            <div class="row no-gutters size">
+              <div class="col-md-4 stageImg">
+                <a href="images/leaflet05.jpg" data-lightbox="sample" data-title="のぞきみ公演"><img src="images/leaflet05m.jpg" class="nozokimi" alt="ALT公演情報"></a>
+                <a href="images/leaflet06.jpg" data-lightbox="sample" data-title="のぞきみ公演">
+                </a>
+              </div>
+              <div class="col-md-8">
+                <div class="col-md-8y stageDetail">
+                  <p>のぞきみ公演</p>
+                  <h5 class="">踊る阿呆に見る阿呆</h5>
+                  <p class="">2018年12月22~24日</p>
+                  <p class="">会場：若葉町WHARF</p>
+                  <p class="">最寄り駅: 京急　黄金町駅</p>
+              </div><!-- /.col-md-8 -->
+            </div><!-- /.col-md-8 -->
+          </div><!-- /.row no-gutters -->
+          </div><!-- /.card mb-3 -->
+        </div><!-- /.block_body -->
       </section>
     </div>
   </main>
-
   <p class="page-top"><a href="#"><i class="fa fa-arrow-up fa-lg"></i></a></p>
 
   <footer class="gl-footer">
