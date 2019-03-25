@@ -134,28 +134,28 @@ a:hover{
 	// }
 }
 
-.memberImg{
-	display: inline-block;
-	width: 250px;
-	height: 250px;
-	position: relative;
- 	overflow: hidden;
-	border-radius: 50%;
-	&_img{
-		  position: absolute;
-		  top: -100%;
-		  bottom: -100%;
-		  margin: auto;
-	}
-}
-.row {
-	margin-bottom: 5rem;
-	h3{
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-		text-align: center;
-	}
-}
+// .memberImg{
+// 	display: inline-block;
+// 	width: 250px;
+// 	height: 250px;
+// 	position: relative;
+//  	overflow: hidden;
+// 	border-radius: 50%;
+// 	&_img{
+// 		  position: absolute;
+// 		  top: -100%;
+// 		  bottom: -100%;
+// 		  margin: auto;
+// 	}
+// }
+// .row {
+// 	margin-bottom: 5rem;
+// 	h3{
+// 		padding-top: 3rem;
+// 		padding-bottom: 3rem;
+// 		text-align: center;
+// 	}
+// }
 .profile th, tr{
 	font-weight: normal;
 	height: 3rem;
