@@ -32,7 +32,12 @@ a:hover{
 		border-bottom: #00acf0;
 		background-color: #a0d8ef;
 }
-
+h2{
+	font-weight: bold;
+	display: block;
+	background-color: #fff;
+	padding: 1rem;
+}
 //FontAwsomeの隙間
 // .fa{
 //   padding-right: 0.8rem;
@@ -44,6 +49,14 @@ a:hover{
   white-space: nowrap;
   overflow: hidden;
   }
+.page-top a{
+	color:#a0d8ef;
+	width: 6rem;
+	height: 6rem;
+	padding: 1.5rem 1rem 3rem 0.8rem;
+	background-color: #fff;
+	border: 3px solid #a0d8ef;
+}
 /*
 * 全体設定ここまで
 */
@@ -427,12 +440,12 @@ textarea{
 			margin: 40px 0;
 			padding-bottom: 40px;
 			line-height: 3;
-			border-bottom: 1px dotted #00acf0;
+			// border-bottom: 1px dotted #00acf0;
 		}
 		&_lists {
 			margin-bottom: 40px;
 			li {
-				padding-left: 40px;
+				// padding-left: 40px;
 				margin-bottom: 20px;
 				display: flex;
 				&::before {
